@@ -62,6 +62,7 @@ pdns.domains.add({name: "test.com"}, {soa:true, mx:true, ns:true}, function(err,
 pdns.domains.remove({name: "test.com"}, {}, function(err, res) {...});
 
 pdns.records.list("test.com", {}, {}, function(err, records) {...});
+pdns.records.get({id:5}, {}, function(err, res) {...});
 pdns.records.add("test.com", {name: "ns2", type: "A", content:"10.1.0.1"}, {}, function(err, res) {...});
 pdns.records.update("test.com", {id:0, name:"ns2", content:"10.1.0.2"}, {}, function(err, res) {...});
 pdns.records.remove("test.com", {name: "ns2"}, {}, function(err, res) {...});
@@ -76,3 +77,4 @@ MIT license.
 ## Fork changelog
  
 -   Addded `pdns.records.update()`
+-   Addded `pdns.records.get()`
