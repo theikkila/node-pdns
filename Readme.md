@@ -77,6 +77,6 @@ MIT license.
 
 ## Fork changelog
  
--   Addded `pdns.records.update()`
--   Addded `pdns.records.get()`
--   Addded `pdns.records.removeById()`
+-   Added `pdns.records.update()`
+-   Added `pdns.records.get()`
+-   Added `pdns.records.removeById()`
